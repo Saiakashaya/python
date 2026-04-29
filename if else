@@ -1,0 +1,115 @@
+#even or odd
+num=int(input())
+if(num%2 == 0):
+    print("even")
+else:
+    print("odd")
+
+#negative or positive    
+num=int(input())
+if(num>0):
+    print("positive")
+elif(num<0):
+    print("negative")
+elif(num==0):
+    print("zero")
+else:
+    print("Invalid")
+    
+#largest of 2 numbers
+n1=int(input())
+n2=int(input())
+if(n1>n2):
+    print("n1 is larger")
+else:
+    print("n2 is larger")
+    
+#largest of 3 numbers
+n1=int(input())
+n2=int(input())
+n3=int(input())
+if(n1>n2 and n1>n3):
+    print("The greatest num is n1",n1)
+elif(n2>n1 and n2>n3):
+    print("The greatest num is n2",n2)
+else:
+    print("The greatest num is n3",n3)
+
+#eligible to vote or not   
+name=str(input())
+age=int(input())
+if(age>=18):
+    print("The person is eligible to vote",name,age)
+else:
+    print("The person is not eligible to vote",name,age)
+
+#leap year or not
+year=int(input())
+if(year%4==0):
+    print("The given year is leap year",year)
+else:
+    print("The given year is not a leap year",year)
+
+#grade calculator
+mark=float(input())
+if(mark>=90):
+    print("Grade A")
+elif(mark>=70 and mark<=89):
+    print("Grade B")
+elif(mark>=50 and mark<=69):
+    print("Grade C")
+elif(mark<50):
+    print("Fail")
+else:
+    print("Invalid")
+
+#divisible by 7 or not
+num=float(input())
+if(num%7==0):
+    print("number is divisible by 7",num)
+else:
+    print("number is not divisible by 7",num)
+
+#2 num and operator and perform 
+num1=int(input())
+num2=int(input())
+operator=input()
+if(operator=='+'):
+    print(num1+num2)
+elif(operator=='-'):
+    print(num1-num2)
+elif(operator=='*'):
+    print(num1*num2)
+elif(operator=='/'):
+    print(num1/num2)
+else:
+    print("Invalid")
+
+#password check
+password=input()
+if len(password)>=8:
+    print("strong password",password)
+else:
+    print("Weak password",password)
+
+#negative or positive or zero   
+num=float(input())
+if(num>0):
+    print("positive")
+elif(num<0):
+    print("negative")
+elif(num==0):
+    print("zero")
+else:
+    print("Invalid")
+
+#no of days books late and fine
+num_of_days_books_latereturn=int(input())
+if(num_of_days_books_latereturn>0 and num_of_days_books_latereturn<=5):
+    print(num_of_days_books_latereturn*0.4,"rupees fine")
+elif(num_of_days_books_latereturn>=6 and num_of_days_books_latereturn<=10):
+    print(num_of_days_books_latereturn*0.65,"rupees fine")
+elif(num_of_days_books_latereturn>11):
+    print(num_of_days_books_latereturn*0.8,"rupees fine")
+else:
+    print("invalid")
