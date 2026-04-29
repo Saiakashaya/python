@@ -1,0 +1,38 @@
+#negative or positive or zero   
+num=float(input())
+if(num>0):
+    print("positive")
+elif(num<0):
+    print("negative")
+elif(num==0):
+    print("zero")
+else:
+    print("Invalid")
+
+#no of days books late and fine
+num_of_days_books_latereturn=int(input())
+if(num_of_days_books_latereturn>0 and num_of_days_books_latereturn<=5):
+    print(num_of_days_books_latereturn*0.4,"rupees fine")
+elif(num_of_days_books_latereturn>=6 and num_of_days_books_latereturn<=10):
+    print(num_of_days_books_latereturn*0.65,"rupees fine")
+elif(num_of_days_books_latereturn>11):
+    print(num_of_days_books_latereturn*0.8,"rupees fine")
+else:
+    print("invalid")
+
+#2 num and operator and perform 
+num1=int(input())
+num2=int(input())
+operator=input()
+if(operator=='+'):
+    print(num1+num2)
+elif(operator=='-'):
+    print(num1-num2)
+elif(operator=='*'):
+    print(num1*num2)
+elif(operator=='/'):
+    print(num1/num2)
+else:
+    print("Invalid")
+
+
