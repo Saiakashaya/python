@@ -35,4 +35,38 @@ elif(operator=='/'):
 else:
     print("Invalid")
 
+# check multiple of 5,3,7
+num=float(input())
+if(num%7==0 and num%3==0 and num%5==0):
+    print("number is multiple of 3,5,7",num)
+else:
+    print("number is not multiple of 3,5,7",num)
+
+#weight and type of bookand display charges
+weight=float(input("Enter weight of the parcel (in kg): "))
+booking_type=input("Enter type of booking (O for Ordinary, E for Express): ")
+charges=0
+if booking_type=='O':
+    if weight<=5:
+        charges = weight*10
+        print(charges)
+    elif weight<=10:
+        charges=weight*8
+        print(charges)
+    else:
+        charges = weight*6
+        print(charges)
+elif booking_type == 'E':   
+    if weight<=5:
+        charges = weight*15
+        print(charges)
+    elif weight<=10:
+        charges = weight*12
+        print(charges)
+    else:
+        charges = weight*10
+        print(charges)
+else:
+    print("Invalid booking type")
+
 
