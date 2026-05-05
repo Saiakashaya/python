@@ -1,0 +1,35 @@
+#Count the number of words in a sentence.
+a="I am Saiakashaya"
+c=0
+for i in a.split():
+    c+=1
+print(c)
+
+#Convert a string to uppercase and lowercase.
+a="Deoxy Ribonucleic Acid"
+print(a)
+print(a.capitalize())
+print(a.casefold())
+
+#Remove all spaces from a string.
+a=" I am Saiakashaya "
+print(a.split())
+for i in a.split():
+    print(i,end="")
+
+#Find the length of a string without using len().
+a="I Am Saiakashaya"
+c=0
+for i in a:
+    c+=1
+print(c)
+
+#Count how many times a specific character appears in a string.
+a="I am Saiakashaya"
+print(a)
+print(a.count("a"))
+
+#Print each character of a string on a new   line
+a="I Am Saiakashaya"
+for i in a:
+    print(i)
